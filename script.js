@@ -16,7 +16,7 @@ let productList=document.getElementById('productList');
     }
 
     try{
-        const response = await fetch(`http://makeup-api.herokuapp.com/api/v1/products.json?brand=${searchTerm}`);
+        const response = await fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?brand=${searchTerm}`);
 
         let data=await response.json();
 
